@@ -19,14 +19,14 @@ export function Gallery() {
             return (
               <CarouselItem
                 key={image}
-                className="flex justify-center w-[12rem]"
+                className="flex justify-center md:w-[12rem] w-[5rem]"
               >
                 <Image
                   src={`/images/gallery-images/${image}`}
                   alt="logo"
                   width={4000}
                   height={2000}
-                  className="cursor-pointer w-[55rem] rounded-xl"
+                  className="cursor-pointer md:w-[55rem] w-[20rem] rounded-xl"
                   loading="lazy"
                 />
               </CarouselItem>
