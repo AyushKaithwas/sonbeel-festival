@@ -6,45 +6,35 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { H1 } from "../heading";
+import { Container } from "../container/container";
 
 const images = ["1.png", "2.png", "3.png", "4.png", "5.png"];
 
 export function Gallery() {
   return (
-    <div className="flex flex-col w-full items-center py-5 gap-20">
-      <h1 className="text-primary font-extrabold text-3xl">GALLERY</h1>
+    <Container className="items-center justify-center">
+      <H1 className="text-center">GALLERY</H1>
       <Carousel className="">
-        <CarouselContent className="">
+        <CarouselContent className="w-[15rem] xl:w-[80rem]">
           {images.map((image) => {
             return (
-              <CarouselItem
-                key={image}
-                className="flex justify-center md:w-[12rem] w-[5rem]"
-              >
+              <CarouselItem key={image} className="flex justify-center">
                 <Image
                   src={`/images/gallery-images/${image}`}
                   alt="logo"
                   width={4000}
                   height={2000}
-                  className="cursor-pointer md:w-[55rem] w-[20rem] rounded-xl"
+                  className="cursor-pointer rounded-xl"
                   loading="lazy"
                 />
               </CarouselItem>
             );
           })}
-          {/* <CarouselItem className="flex justify-center">
-            <Image
-              src="/images/invited-guests-thumbnail.png"
-              alt="logo"
-              width={2000}
-              height={2000}
-              className="cursor-pointer w-[50rem] h-[10rem]"
-            />
-          </CarouselItem> */}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-    </div>
+    </Container>
   );
 }

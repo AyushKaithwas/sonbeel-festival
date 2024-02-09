@@ -1,17 +1,4 @@
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
   Sheet,
   SheetClose,
   SheetContent,
@@ -21,53 +8,194 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AlignJustify } from "lucide-react";
 
-const navItems = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Festival Schedule", href: "#" },
-  { name: "Events", href: "#" },
-  { name: "Tourist Guide", href: "#" },
-  { name: "Gallery", href: "#" },
-  { name: "Contacts", href: "#" },
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+import { AlignJustify, ChevronDown } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+
+interface MenuItem {
+  name: string;
+  url: string;
+}
+
+interface MenuEntry {
+  name: string;
+  url?: string;
+  dropdown?: boolean;
+  items?: MenuItem[];
+}
+
+const menuConfig: MenuEntry[] = [
+  {
+    name: "Home",
+    url: "/",
+    dropdown: false,
+  },
+  {
+    name: "About",
+    dropdown: true,
+    items: [
+      { name: "Sonbeel", url: "/about/sonbeel" },
+      { name: "Assam University", url: "/about/aus" },
+      { name: "Sonbeel Utsav", url: "/about/sonbeelutsav" },
+    ],
+  },
+  {
+    name: "Committee",
+    dropdown: true,
+    items: [
+      { name: "Organising Core Committee", url: "/committee#corecommittee" },
+      { name: "Organising Sub Committee", url: "/committee#subcommittee" },
+      { name: "Taskforce", url: "/committee#taskforce" },
+    ],
+  },
+  {
+    name: "Message",
+    dropdown: true,
+    items: [
+      { name: "VC's message", url: "/message#vc" },
+      { name: "Director's message", url: "/message#director" },
+      { name: "Convener's message", url: "/message#convener" },
+    ],
+  },
+  {
+    name: "News",
+    url: "/news",
+    dropdown: false,
+  },
+  {
+    name: "Festival Schedule",
+    dropdown: true,
+    items: [
+      { name: "24th Feb 2024", url: "/schedule/2024-02-24" },
+      { name: "25th Feb 2024", url: "/schedule/2024-02-25" },
+      { name: "26th Feb 2024", url: "/schedule/2024-02-26" },
+    ],
+  },
+  {
+    name: "Events",
+    dropdown: true,
+    items: [{ name: "Photography Contest", url: "/contest/photography" }],
+  },
+  {
+    name: "Gallery",
+    url: "/gallery",
+    dropdown: false,
+  },
+  {
+    name: "Contact",
+    url: "/contact",
+    dropdown: false,
+  },
 ];
+
+const DropdownLink = ({ name, url }: MenuItem) => (
+  <DropdownMenuItem>
+    <Link href={url}>{name}</Link>
+  </DropdownMenuItem>
+);
 
 export function Navbar() {
   return (
-    <>
-      <div className="md:flex hidden">
-        <NavigationMenu>
-          <NavigationMenuList>
-            {navItems.map((item) => {
-              return (
-                <NavigationMenuItem key={item.name}>
-                  <NavigationMenuTrigger>{item.name}</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <NavigationMenuLink href={item.href}>
-                      {item.name}
-                    </NavigationMenuLink>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              );
-            })}
-          </NavigationMenuList>
-        </NavigationMenu>
+    <div className="sticky top-0 z-10 flex items-center justify-between rounded-sm px-5 py-5 shadow-md backdrop-blur-lg md:px-10">
+      <Link className="flex items-center gap-5 md:gap-6" href="/">
+        <Image
+          src="/images/son-beel-utsav-logo.png"
+          alt="logo"
+          width={200}
+          height={200}
+          className="w-14 cursor-pointer"
+        />
+        <Image
+          src="/images/sonbeel-utsav-text.png"
+          alt="logo"
+          width={2000}
+          height={2000}
+          className="hidden w-[20rem] cursor-pointer rounded-xl md:inline"
+        />
+      </Link>
+      <div className="hidden gap-10 2xl:flex">
+        {menuConfig.map((menu) => (
+          <DropdownMenu key={menu.name}>
+            <DropdownMenuTrigger
+              className={`flex items-center gap-1 ${menu.dropdown ? "" : ""}`}
+            >
+              {menu.dropdown ? (
+                <>
+                  {menu.name}
+                  <ChevronDown size={20} />
+                </>
+              ) : (
+                <Link href={menu.url || "#"}>{menu.name}</Link>
+              )}
+            </DropdownMenuTrigger>
+            {menu.dropdown && menu.items && (
+              <DropdownMenuContent>
+                {menu.items.map((item) => (
+                  <DropdownLink
+                    key={item.name}
+                    name={item.name}
+                    url={item.url}
+                  />
+                ))}
+              </DropdownMenuContent>
+            )}
+          </DropdownMenu>
+        ))}
       </div>
-      <div className="md:hidden flex">
+      <div className="flex 2xl:hidden">
         <Sheet>
           <SheetTrigger asChild>
             <AlignJustify className="cursor-pointer" />
           </SheetTrigger>
           <SheetContent>
             <ul>
-              {navItems.map((item) => {
-                return <li key={item.name}>{item.name}</li>;
+              {menuConfig.map((item) => {
+                if (!item.items)
+                  return (
+                    item.url && (
+                      <Link key={item.name} href={item.url}>
+                        <SheetTitle>{item.name}</SheetTitle>
+                      </Link>
+                    )
+                  );
+
+                return (
+                  <Collapsible key={item.name}>
+                    <CollapsibleTrigger className="flex items-center text-lg font-semibold text-foreground ">
+                      {item.name} <ChevronDown size={15} />
+                    </CollapsibleTrigger>
+                    <CollapsibleContent>
+                      <ul className="pl-5">
+                        {item.items.map((item) => {
+                          return (
+                            <Link key={item.name} href={item.url}>
+                              <li>{item.name}</li>
+                            </Link>
+                          );
+                        })}
+                      </ul>
+                    </CollapsibleContent>
+                  </Collapsible>
+                );
               })}
             </ul>
           </SheetContent>
         </Sheet>
       </div>
-    </>
+    </div>
   );
 }
