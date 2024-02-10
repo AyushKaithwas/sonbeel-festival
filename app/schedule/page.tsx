@@ -4,11 +4,12 @@ import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 pdfjs.GlobalWorkerOptions.workerSrc =
   "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
 
-export default function Schedule() {
+function Schedule() {
   const searchParams = useSearchParams();
   const eventDay = Number(searchParams.get("day"));
   const [numPages, setNumPages] = useState<number | null>(null);
@@ -73,5 +74,13 @@ export default function Schedule() {
         </>
       )}
     </Container>
+  );
+}
+
+export default function ScheduleMain() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Schedule />
+    </Suspense>
   );
 }
