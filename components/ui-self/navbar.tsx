@@ -72,7 +72,7 @@ const menuConfig: MenuEntry[] = [
     ],
   },
   {
-    name: "News",
+    name: "News & Info",
     url: "/news",
     dropdown: false,
   },
@@ -80,9 +80,9 @@ const menuConfig: MenuEntry[] = [
     name: "Festival Schedule",
     dropdown: true,
     items: [
-      { name: "24th Feb 2024", url: "/schedule/2024-02-24" },
-      { name: "25th Feb 2024", url: "/schedule/2024-02-25" },
-      { name: "26th Feb 2024", url: "/schedule/2024-02-26" },
+      { name: "24th Feb 2024", url: "/schedule?day=1" },
+      { name: "25th Feb 2024", url: "/schedule?day=2" },
+      { name: "26th Feb 2024", url: "/schedule?day=3" },
     ],
   },
   {
@@ -145,11 +145,9 @@ export function Navbar() {
             {menu.dropdown && menu.items && (
               <DropdownMenuContent>
                 {menu.items.map((item) => (
-                  <DropdownLink
-                    key={item.name}
-                    name={item.name}
-                    url={item.url}
-                  />
+                  <Link key={item.name} href={item.url}>
+                    <DropdownLink name={item.name} url={item.url} />
+                  </Link>
                 ))}
               </DropdownMenuContent>
             )}
@@ -183,7 +181,9 @@ export function Navbar() {
                         {item.items.map((item) => {
                           return (
                             <Link key={item.name} href={item.url}>
-                              <li>{item.name}</li>
+                              <li className="hover:text-primary">
+                                {item.name}
+                              </li>
                             </Link>
                           );
                         })}

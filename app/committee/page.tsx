@@ -40,6 +40,7 @@ export default function Page() {
             <div>
               <h1 className="font-bold text-secondary">Dr. Arun Jyoti Nath</h1>
               <p>Convener</p>
+              <p>Task Force</p>
               <p>Son Beel Utsav 2024</p>
             </div>
           </div>

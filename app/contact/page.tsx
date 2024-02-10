@@ -35,7 +35,9 @@ export default function Page() {
         />
         <div className="flex w-full flex-col items-center gap-3 rounded-lg border-2 py-10 text-center md:w-[50rem] md:px-[10rem] md:py-[5rem]">
           <H1>Dr. Arun Jyoti Nath</H1>
-          <h1 className="text-lg md:text-2xl">Convener, Son Beel Utsav 2024</h1>
+          <h1 className="text-lg md:text-2xl">
+            Task Force, Convener, Son Beel Utsav 2024
+          </h1>
           <div className="flex items-center justify-center gap-1 md:gap-3">
             <Phone size={20} />
             <p className="text-lg font-bold md:text-2xl">+91 7636023026</p>

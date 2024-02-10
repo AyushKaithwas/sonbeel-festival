@@ -31,10 +31,10 @@ export default function Page() {
         </h1>
         <ol className="list-decimal pl-5 md:pl-16">
           <li>
-            Each image should be renamed as [Participant’s Name_Caption_1][
-            Participant’s Name_Caption_2] e.g [amit_das_sunset_2]
+            Each image should be renamed as [Participant&apos;s Name_Caption_1][
+            Participant&apos;s Name_Caption_2] e.g [amit_das_sunset_2]
           </li>
-          <li>Entry must be the contestant’s original work.</li>
+          <li>Entry must be the contestant&apos;s original work.</li>
           <li>
             Only photos taken by digital cameras are allowed. A single “High
             Dynamic Range” photo produced from multiple exposures and Black &

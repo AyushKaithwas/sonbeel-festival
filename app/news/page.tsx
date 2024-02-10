@@ -6,7 +6,7 @@ export default function Page() {
     <Container>
       <div>
         <Image
-          src="/images/news/1.png"
+          src="/images/news/news1.png"
           alt="Newspaper Snippet"
           width={500}
           height={500}
@@ -18,7 +18,7 @@ export default function Page() {
       </div>
       <div>
         <Image
-          src="/images/news/2.jpg"
+          src="/images/news/news2.jpg"
           alt="Newspaper Snippet"
           width={2000}
           height={2000}
@@ -28,7 +28,18 @@ export default function Page() {
           Tripura Darpan (06 February 2024)
         </h1>
       </div>
+      <div>
+        <Image
+          src="/images/news/info1.jpeg"
+          alt="Information about Festival"
+          width={2000}
+          height={2000}
+          className="w-[70rem]"
+        />
+        {/* <h1 className="text-lg text-primary">
+          Tripura Darpan (06 February 2024)
+        </h1> */}
+      </div>
     </Container>
   );
 }
-// hover:transform hover:scale-[200%] transition duration-300 ease-in-out cursor-pointer
