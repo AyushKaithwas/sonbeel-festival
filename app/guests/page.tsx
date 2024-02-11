@@ -10,7 +10,7 @@ export default function Page() {
       {invitedGuests.map((guest) => {
         return (
           <div
-            className="flex h-[14rem] w-[50rem] items-center justify-start gap-10 rounded-3xl border border-primary px-10"
+            className="flex h-[10rem] w-[20rem] items-center justify-start gap-10 rounded-3xl border border-primary px-10 md:h-[14rem] md:w-[50rem]"
             key={guest.name}
           >
             <Image
@@ -18,10 +18,10 @@ export default function Page() {
               alt={guest.name}
               width={200}
               height={200}
-              className="w-[10rem] rounded-3xl"
+              className="w-[6rem] rounded-3xl md:w-[10rem]"
             />
             <div>
-              <h1 className="text-2xl font-semibold text-secondary">
+              <h1 className="text-sm font-semibold text-secondary md:text-2xl">
                 {guest.name}
               </h1>
 
