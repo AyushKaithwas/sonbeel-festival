@@ -65,23 +65,27 @@ export default async function Home() {
           <H1 className="text-center">UPDATES</H1>
           <div className="flex gap-20 text-center">
             <div className="flex flex-col items-center gap-4">
-              <Image
-                src="/images/photography-contest-thumnail.png"
-                alt="logo"
-                width={200}
-                height={200}
-                className="w-40 cursor-pointer "
-              />
+              <Link href="/contest/photography">
+                <Image
+                  src="/images/photography-contest-thumnail.png"
+                  alt="logo"
+                  width={200}
+                  height={200}
+                  className="w-40 cursor-pointer "
+                />
+              </Link>
               <p>Photography Contest</p>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <Image
-                src="/images/invited-guests-thumbnail.png"
-                alt="logo"
-                width={200}
-                height={200}
-                className="w-40 cursor-pointer "
-              />
+              <Link href="/guests">
+                <Image
+                  src="/images/invited-guests-thumbnail.png"
+                  alt="logo"
+                  width={200}
+                  height={200}
+                  className="w-40 cursor-pointer "
+                />
+              </Link>
               <p>Invited Guests</p>
             </div>
           </div>
