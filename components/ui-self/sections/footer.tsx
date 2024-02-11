@@ -21,7 +21,7 @@ export function Footer({
         </Link>
       </h1>
 
-      <h1 className="">{visitors} people viewed this website so far.</h1>
+      <h1 className="">{visitors} people visited this website so far.</h1>
     </footer>
   );
 }
