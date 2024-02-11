@@ -9,11 +9,11 @@ export function Footer({
 }) {
   console.log(visitors);
   return (
-    <footer className="flex w-full items-center justify-around gap-10 bg-slate-100 py-10">
+    <footer className="flex w-full items-center justify-around gap-10 bg-slate-100 px-2 py-10 text-center">
       <h1>
         Created by{" "}
         <Link
-          className="font-bold hover:text-primary"
+          className="font-bold text-primary hover:text-secondary"
           href="https://www.linkedin.com/in/ayush1kaithwas/"
           target="_blank"
         >
