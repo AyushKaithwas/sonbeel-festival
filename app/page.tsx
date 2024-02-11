@@ -1,3 +1,4 @@
+import { IncrViewer } from "@/actions/incrViewer";
 import { Container } from "@/components/ui-self/container/container";
 import { H1 } from "@/components/ui-self/heading";
 import { Gallery } from "@/components/ui-self/sections/gallery";
@@ -6,7 +7,9 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default async function Home() {
+  const viewers = await IncrViewer();
+
   return (
     <Container className="px-0 ">
       {/* Hero section */}
@@ -59,6 +62,10 @@ export default function Home() {
       <Link href="/gallery">
         <Gallery />
       </Link>
+
+      <h1 className="text-2xl font-medium text-primary">
+        {"Visitors: " + viewers}
+      </h1>
     </Container>
   );
 }
