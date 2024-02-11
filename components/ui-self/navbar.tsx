@@ -63,6 +63,11 @@ const menuConfig: MenuEntry[] = [
     ],
   },
   {
+    name: "Invited Guests",
+    url: "/guests",
+    dropdown: false,
+  },
+  {
     name: "Message",
     dropdown: true,
     items: [
