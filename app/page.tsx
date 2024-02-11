@@ -39,7 +39,7 @@ export default async function Home() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="flex items-center gap-10 rounded-xl border px-10 py-5">
+        <div className="flex flex-col items-center gap-2 rounded-xl border px-3 py-5 md:flex-row md:gap-10 md:px-10">
           <h1 className="text-xl font-bold text-secondary">Announcement</h1>
           <audio controls src="/audio/sonbeel-utsav-audio-message.mpeg"></audio>
         </div>
