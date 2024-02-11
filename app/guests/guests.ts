@@ -4,7 +4,7 @@ type invitedGuest = {
   url: string | null;
 };
 
-const invitedGuests: invitedGuest[] = [
+export const invitedGuests: invitedGuest[] = [
   {
     name: "Amar Mitra",
     pic: "/images/amar-mitra.jpg",
