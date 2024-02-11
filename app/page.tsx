@@ -23,6 +23,20 @@ export default async function Home() {
         </p>
       </div>
 
+      <video
+        width="848"
+        height="478"
+        controls
+        className="mb-10 rounded-2xl"
+        autoPlay
+        loop
+        playsInline
+        muted
+      >
+        <source src="/videos/sonbeel-promo-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       {/* Mid section */}
       <div className="flex h-[20rem] w-full items-center justify-center bg-[url('/images/mid-section-bg.png')] bg-cover bg-fixed bg-center bg-no-repeat  text-center">
         <h1 className="text-lg text-white drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] md:text-2xl">
@@ -30,6 +44,14 @@ export default async function Home() {
           the revelry!
         </h1>
       </div>
+
+      <Image
+        src="/images/sonbeel-utsav-banner.jpeg"
+        alt="logo"
+        width={2000}
+        height={2000}
+        className="w-[80rem] rounded-2xl"
+      />
 
       {/* Updates section */}
       <div className="flex w-full flex-col items-center justify-center gap-10 p-10">
