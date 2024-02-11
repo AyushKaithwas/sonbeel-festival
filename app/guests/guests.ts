@@ -7,12 +7,12 @@ type invitedGuest = {
 export const invitedGuests: invitedGuest[] = [
   {
     name: "Amar Mitra",
-    pic: "/images/amar-mitra.jpg",
+    pic: "/images/guest/amar-mitra.jpg",
     url: "https://en.wikipedia.org/wiki/Amar_Mitra_(writer)",
   },
   {
     name: "Sadhan Chattopadhyay",
-    pic: "/images/sadhan-chattopadhyay.jpg",
+    pic: "/images/guest/sadhan-chattopadhyay.jpg",
     url: null,
   },
   {
@@ -27,42 +27,42 @@ export const invitedGuests: invitedGuest[] = [
   },
   {
     name: "Ratnadeep Choudhury, NDTV",
-    pic: null,
+    pic: "/images/guest/ratnadeep-choudhury.jpeg",
     url: null,
   },
   {
     name: "Chandrani Sinha, Russia TV",
-    pic: null,
-    url: null,
+    pic: "/images/guest/chandrani-sinha.jpg",
+    url: "https://muckrack.com/chandrani-sinha/articles",
   },
   {
     name: "P J Barua, executive Editor, Assam Tribune",
-    pic: null,
+    pic: "/images/guest/p-j-barua.jpeg",
     url: null,
   },
   {
     name: "Padmasree Anup Sah, Nainital",
-    pic: null,
-    url: null,
+    pic: "/images/guest/anup-sah.webp",
+    url: "https://www.instagram.com/anupthulgharia/",
   },
   {
     name: "V S Ohri, Delhi",
-    pic: null,
-    url: null,
+    pic: "/images/guest/v-s-ohri.jpeg",
+    url: "https://www.linkedin.com/in/vishal-sharat-ohri-45866b18b/?originalSubdomain=in",
   },
   {
     name: "S S Rasaily, Dehradun",
     pic: null,
-    url: null,
+    url: "https://www.linkedin.com/in/sargam-rasaily-29506914/?originalSubdomain=in",
   },
   {
     name: "Tulika Mondal and Gangadhar Mondal and team from Zee Bangla",
-    pic: null,
+    pic: "/images/guest/tulika-gangadhar-mondal.avif",
     url: null,
   },
   {
     name: "Baul team from Shantiniketan, Tripura, and Silchar",
-    pic: null,
+    pic: "/images/guest/baul-team.jpg",
     url: null,
   },
 ];
