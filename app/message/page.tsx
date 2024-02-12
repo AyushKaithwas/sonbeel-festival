@@ -1,12 +1,19 @@
 import { Container } from "@/components/ui-self/container/container";
 import { H1 } from "@/components/ui-self/heading";
+import { renderWithLineBreaks } from "@/lib/utils.tsx";
 import Image from "next/image";
 
 const messages = [
   {
     id: "vc",
     title: "Vice Chancellor's message",
-    content: "Coming soon",
+    content: `Welcome to the Sonbeel Festival 2024!
+              Sonbeel, an enchanting jewel nestled in the heart of Asia, stands as a testament to the breathtaking beauty of nature. Having had the privilege to explore its wonders firsthand, I am captivated by its unparalleled charm. It is my firm belief that Sonbeel possesses immense potential as a tourism hotspot.
+              Our endeavor to promote tourism in this region is not merely a pursuit of economic growth but a commitment to uplift the local communities. By harnessing the power of tourism, we aim to empower the families residing in and around Sonbeel, heralding a new era of prosperity for the entire region.
+              However, despite its natural allure, Sonbeel remains largely undiscovered due to inadequate marketing efforts. Thus, we have conceived the idea of the Sonbeel Festival—a celebration of the region's beauty and cultural richness. This festival serves as a platform to showcase Sonbeel to the World, inviting renowned photographers and literary figures to document and promote its splendour.
+              As a responsible institution, Assam University Silchar is dedicated to establishing the Sonbeel Festival as an annual event. With the generous support of sponsors like NEC, Shillong, Ministry of DoNER, we are proud to announce the inaugural edition of the festival, scheduled from February 24th to 26th, coinciding with the enchanting full-moon nights that unveil Sonbeel in all its glory.
+              I extend a heartfelt invitation to all to join us at the Sonbeel Festival and immerse yourselves in the unparalleled beauty of this pristine wetland. This is just the beginning of our journey, and with your cooperation, we envision the Sonbeel Festival evolving into a grand and successful event in the years to come.
+              On behalf of Assam University Silchar, I extend warm wishes and heartfelt invitations to all who share our passion for exploration and appreciation of nature's wonders.`,
     imageUrl: "/images/message/vc.jpg",
     name: "Prof. Rajive Mohan Pant",
     designation: "Vice Chancellor & Chairman",
@@ -58,7 +65,7 @@ export default function Page() {
             <div className="w-[40rem]">
               <H1>{message.title}</H1>
               <p className="p-2 italic md:pl-10">
-                - &quot;{message.content}&quot;
+                - &quot;{renderWithLineBreaks(message.content)}&quot;
               </p>
             </div>
           </section>
