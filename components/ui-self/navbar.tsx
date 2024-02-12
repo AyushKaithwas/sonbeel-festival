@@ -83,12 +83,8 @@ const menuConfig: MenuEntry[] = [
   },
   {
     name: "Festival Schedule",
-    dropdown: true,
-    items: [
-      { name: "24th Feb 2024", url: "/schedule?day=1" },
-      { name: "25th Feb 2024", url: "/schedule?day=2" },
-      { name: "26th Feb 2024", url: "/schedule?day=3" },
-    ],
+    url: "/sonbeel-utsav-2024-schedule.pdf",
+    dropdown: false,
   },
   {
     name: "Events",
@@ -143,8 +139,17 @@ export function Navbar() {
                   {menu.name}
                   <ChevronDown size={20} />
                 </>
+              ) : menu.url ? (
+                <Link
+                  href={menu.url || "#"}
+                  target={
+                    menu.url.split(".").pop() === "pdf" ? "_blank" : "_self"
+                  }
+                >
+                  {menu.name}
+                </Link>
               ) : (
-                <Link href={menu.url || "#"}>{menu.name}</Link>
+                <></>
               )}
             </DropdownMenuTrigger>
             {menu.dropdown && menu.items && (
