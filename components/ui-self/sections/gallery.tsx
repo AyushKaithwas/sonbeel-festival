@@ -8,13 +8,16 @@ import {
 import Image from "next/image";
 import { H1 } from "../heading";
 import { Container } from "../container/container";
+import Link from "next/link";
 
 const images = ["1.png", "2.png", "3.png", "4.png", "5.png"];
 
 export function Gallery() {
   return (
     <Container className="items-center justify-center">
-      <H1 className="text-center">GALLERY</H1>
+      <Link href="/gallery">
+        <H1 className="text-center">GALLERY</H1>
+      </Link>
       <Carousel className="">
         <CarouselContent className="w-[15rem] xl:w-[80rem]">
           {images.map((image) => {
