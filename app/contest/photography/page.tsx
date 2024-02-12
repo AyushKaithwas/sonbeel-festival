@@ -77,7 +77,7 @@ export default function Page() {
             The images have to be sent through email: utsabsonbeel@gmail.com
           </li>
           <li>
-            Submission begins at 1:00 pm IST on February 6, 2017 and ends at
+            Submission begins at 1:00 pm IST on February 6, 2024 and ends at
             11:59 pm IST on February 22, 2024.
           </li>
         </ol>
