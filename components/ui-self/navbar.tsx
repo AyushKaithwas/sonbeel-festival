@@ -89,7 +89,10 @@ const menuConfig: MenuEntry[] = [
   {
     name: "Events",
     dropdown: true,
-    items: [{ name: "Photography Contest", url: "/contest/photography" }],
+    items: [
+      { name: "Photography Contest", url: "/contest/photography" },
+      { name: "Folk Song and Folk Dance Contest", url: "/contest/folk" },
+    ],
   },
   {
     name: "Gallery",
