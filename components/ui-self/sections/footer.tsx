@@ -7,7 +7,6 @@ export function Footer({
   className?: string;
   visitors: number;
 }) {
-  console.log(visitors);
   return (
     <footer className="flex w-full flex-col items-center justify-center gap-1 bg-slate-100 px-2 py-10 text-center md:flex-row md:gap-[15rem]">
       <h1>
