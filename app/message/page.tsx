@@ -6,8 +6,8 @@ const messages = [
   {
     id: "vc",
     title: "Vice Chancellor's message",
-    content: "---",
-    imageUrl: "/images/message/user.jpg",
+    content: "Coming soon",
+    imageUrl: "/images/message/vc.jpg",
     name: "Prof. Rajive Mohan Pant",
   },
   {
