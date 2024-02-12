@@ -128,10 +128,10 @@ export function Navbar() {
           alt="logo"
           width={2000}
           height={2000}
-          className="hidden w-[20rem] cursor-pointer rounded-xl md:inline"
+          className="hidden w-[20rem] cursor-pointer rounded-xl 2xl:inline"
         />
       </Link>
-      <div className="hidden gap-10 2xl:flex">
+      <div className="hidden gap-10 xl:flex">
         {menuConfig.map((menu) => (
           <DropdownMenu key={menu.name}>
             <DropdownMenuTrigger
@@ -167,7 +167,7 @@ export function Navbar() {
           </DropdownMenu>
         ))}
       </div>
-      <div className="flex 2xl:hidden">
+      <div className="flex xl:hidden">
         <Sheet>
           <SheetTrigger asChild>
             <AlignJustify className="cursor-pointer" />
