@@ -3,7 +3,7 @@ import { H1 } from "@/components/ui-self/heading";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
-import { renderWithLineBreaks } from "@/lib/utils.tsx";
+import { renderWithLineBreaks } from "@/lib/utilsTsx.tsx";
 
 interface AboutInfo {
   name: string;

@@ -1,6 +1,6 @@
 import { Container } from "@/components/ui-self/container/container";
 import { H1 } from "@/components/ui-self/heading";
-import { renderWithLineBreaks } from "@/lib/utils.tsx";
+import { renderWithLineBreaks } from "@/lib/utilsTsx.tsx";
 import Image from "next/image";
 
 const messages = [
