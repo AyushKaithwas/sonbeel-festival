@@ -3,15 +3,7 @@ import { H1 } from "@/components/ui-self/heading";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
-
-function renderWithLineBreaks(text: string) {
-  return text.split("\n").map((line, index, array) => (
-    <React.Fragment key={index}>
-      {line}
-      {index < array.length - 1 && <br />}
-    </React.Fragment>
-  ));
-}
+import { renderWithLineBreaks } from "@/lib/utils.tsx";
 
 interface AboutInfo {
   name: string;
