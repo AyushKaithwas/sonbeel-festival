@@ -19,11 +19,11 @@ const messages = [
     name: "Prof. Manabendra Dutta Choudhury",
   },
   {
-    id: "convener",
-    title: "Converner's message",
-    content: "---",
-    imageUrl: "/images/message/user.jpg",
-    name: "Dr. Arun Jyoti Nath",
+    id: "registrar",
+    title: "Registrar's message",
+    content: "Coming soon",
+    imageUrl: "/images/message/registrar.jpg",
+    name: "Dr. Pradosh Kiran Nath",
   },
 ];
 

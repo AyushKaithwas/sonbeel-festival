@@ -73,7 +73,7 @@ const menuConfig: MenuEntry[] = [
     items: [
       { name: "VC's message", url: "/message#vc" },
       { name: "Director's message", url: "/message#director" },
-      { name: "Convener's message", url: "/message#convener" },
+      { name: "Registrar's message", url: "/message#registrar" },
     ],
   },
   {
