@@ -114,7 +114,7 @@ const DropdownLink = ({ name, url }: MenuItem) => (
 
 export function Navbar() {
   return (
-    <div className="sticky top-0 z-10 flex items-center justify-between rounded-sm px-5 py-5 shadow-md backdrop-blur-lg md:px-10">
+    <div className="sticky top-0 z-10 flex items-center justify-between rounded-sm bg-white/40 px-5 py-5 shadow-md backdrop-blur-lg md:px-10">
       <Link className="flex items-center gap-5 md:gap-6" href="/">
         <Image
           src="/images/son-beel-utsav-logo.png"
