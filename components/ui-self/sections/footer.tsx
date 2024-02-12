@@ -9,7 +9,7 @@ export function Footer({
 }) {
   console.log(visitors);
   return (
-    <footer className="flex w-full items-center justify-around gap-10 bg-slate-100 px-2 py-10 text-center">
+    <footer className="flex w-full flex-col items-center justify-center gap-1 bg-slate-100 px-2 py-10 text-center md:flex-row md:gap-[15rem]">
       <h1>
         Created by{" "}
         <Link
@@ -20,7 +20,7 @@ export function Footer({
           Ayush Kaithwas
         </Link>
       </h1>
-
+      <h1 className="font-semibold">©Sonbeel Utsav 2024</h1>
       <h1 className="">{visitors} people visited this website so far.</h1>
     </footer>
   );
