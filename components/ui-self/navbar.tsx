@@ -68,7 +68,7 @@ const menuConfig: MenuEntry[] = [
     items: [
       { name: "Organising Core Committee", url: "/committee#corecommittee" },
       { name: "Organising Sub Committee", url: "/committee#subcommittee" },
-      { name: "Taskforce", url: "/committee#taskforce" },
+      { name: "Task Force", url: "/committee#taskforce" },
     ],
   },
   {
