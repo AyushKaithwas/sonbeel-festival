@@ -48,7 +48,7 @@ const menuConfig: MenuEntry[] = [
     name: "About",
     dropdown: true,
     items: [
-      { name: "Sonbeel", url: "/about/sonbeel" },
+      { name: "Sonbeel: The Treasure", url: "/about/sonbeel" },
       { name: "Assam University", url: "/about/aus" },
       { name: "Sonbeel Utsav", url: "/about/sonbeelutsav" },
     ],
