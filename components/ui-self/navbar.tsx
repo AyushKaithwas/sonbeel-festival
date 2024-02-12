@@ -54,6 +54,15 @@ const menuConfig: MenuEntry[] = [
     ],
   },
   {
+    name: "Message",
+    dropdown: true,
+    items: [
+      { name: "VC's message", url: "/message#vc" },
+      { name: "Director's message", url: "/message#director" },
+      { name: "Registrar's message", url: "/message#registrar" },
+    ],
+  },
+  {
     name: "Committee",
     dropdown: true,
     items: [
@@ -66,15 +75,6 @@ const menuConfig: MenuEntry[] = [
     name: "Invited Guests",
     url: "/guests",
     dropdown: false,
-  },
-  {
-    name: "Message",
-    dropdown: true,
-    items: [
-      { name: "VC's message", url: "/message#vc" },
-      { name: "Director's message", url: "/message#director" },
-      { name: "Registrar's message", url: "/message#registrar" },
-    ],
   },
   {
     name: "News & Info",
