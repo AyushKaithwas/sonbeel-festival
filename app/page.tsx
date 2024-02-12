@@ -52,14 +52,22 @@ export default async function Home() {
           </h1>
         </div>
 
-        <Image
-          src="/images/sonbeel-utsav-banner.jpeg"
-          alt="logo"
-          width={2000}
-          height={2000}
-          className="w-[80rem] rounded-2xl"
-        />
-
+        <div className="flex w-full flex-col items-center gap-5 px-10">
+          <Image
+            src="/images/sonbeel-utsav-banner.jpeg"
+            alt="logo"
+            width={2000}
+            height={2000}
+            className="h-auto w-2/3 flex-grow rounded-2xl"
+          />
+          <Image
+            src="/images/sonbeel-utsav-poster.jpeg"
+            alt="logo"
+            width={2000}
+            height={2000}
+            className="h-auto w-2/3 flex-grow rounded-2xl"
+          />
+        </div>
         {/* Updates section */}
         <div className="flex w-full flex-col items-center justify-center gap-10 p-10">
           <H1 className="text-center">UPDATES</H1>
@@ -92,9 +100,8 @@ export default async function Home() {
         </div>
 
         {/* Gallery section */}
-        <Link href="/gallery">
-          <Gallery />
-        </Link>
+
+        <Gallery />
       </Container>
       <Footer visitors={viewers} />
     </>
