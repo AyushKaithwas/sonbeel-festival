@@ -58,14 +58,14 @@ export default async function Home() {
             alt="logo"
             width={2000}
             height={2000}
-            className="h-auto w-2/3 flex-grow rounded-2xl"
+            className="h-auto flex-grow rounded-2xl md:w-2/3"
           />
           <Image
             src="/images/sonbeel-utsav-poster.jpeg"
             alt="logo"
             width={2000}
             height={2000}
-            className="h-auto w-2/3 flex-grow rounded-2xl"
+            className="h-auto flex-grow rounded-2xl md:w-2/3"
           />
         </div>
         {/* Updates section */}
