@@ -12,7 +12,7 @@ export default function Page() {
         alt="Folk Song and Folk Dance Contest"
         height={1000}
         width={1000}
-        className="w-full"
+        className="w-full md:w-1/3"
       />
     </Container>
   );
