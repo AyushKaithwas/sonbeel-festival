@@ -125,7 +125,7 @@ export function Navbar() {
           className="w-14 cursor-pointer"
         />
         <Image
-          src="/images/sonbeel-utsav-text.png"
+          src="/images/sonbeel-utsav-2024-logo.jpeg"
           alt="logo"
           width={2000}
           height={2000}
