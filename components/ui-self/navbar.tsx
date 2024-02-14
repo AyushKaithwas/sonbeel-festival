@@ -92,6 +92,7 @@ const menuConfig: MenuEntry[] = [
     items: [
       { name: "Photography Contest", url: "/contest/photography" },
       { name: "Folk Song and Folk Dance Contest", url: "/contest/folk" },
+      { name: "Art Contest", url: "/contest/art" },
     ],
   },
   {
