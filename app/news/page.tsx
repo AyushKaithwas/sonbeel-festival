@@ -69,7 +69,7 @@ export default function Page() {
           to read more)
         </h1>
       </div>
-      <ul className="flex w-[50rem] list-disc flex-col gap-2 ">
+      <ul className="flex list-disc flex-col gap-2 md:w-[50rem] ">
         <li>
           <h1 className=" text-xl">
             আর্থসামাজিক ও উন্নয়নের লক্ষ্যে আগামী ২৪ থেকে ২৬ ফেব্রুয়ারি
