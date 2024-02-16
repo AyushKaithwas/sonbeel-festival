@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <Container>
       <h1 className="text-4xl text-primary">News</h1>
-      <div>
+      <div className="shadow-md">
         <Image
           src="/images/news/news3.jpg"
           alt="Newspaper Snippet"
@@ -25,7 +25,29 @@ export default function Page() {
           The City Standard (15 February 2024)
         </h1>
       </div>
-      <div>
+      <div className="shadow-md">
+        <Image
+          src="/images/news/news5.png"
+          alt="Newspaper Snippet"
+          width={1200}
+          height={1200}
+          className="w-[40rem]"
+        />
+        <h1 className="text-lg text-primary">
+          Northern India Patrika (16 February 2024)
+        </h1>
+      </div>
+      <div className="shadow-md">
+        <Image
+          src="/images/news/news6.jpg"
+          alt="Newspaper Snippet"
+          width={1200}
+          height={1200}
+          className="w-[40rem]"
+        />
+        <h1 className="text-lg text-primary">Amrit Kaal (16 February 2024)</h1>
+      </div>
+      <div className="shadow-md">
         <Image
           src="/images/news/news1.png"
           alt="Newspaper Snippet"
@@ -37,7 +59,7 @@ export default function Page() {
           Dainik Jugasankha (29 January 2024)
         </h1>
       </div>
-      <div>
+      <div className="shadow-md">
         <Image
           src="/images/news/news2.jpg"
           alt="Newspaper Snippet"
@@ -49,7 +71,7 @@ export default function Page() {
           Tripura Darpan (06 February 2024)
         </h1>
       </div>
-      <div>
+      <div className="shadow-md">
         <Image
           src="/images/news/news4.png"
           alt="Newspaper Snippet"
