@@ -21,7 +21,7 @@ export function Footer({
         (CSE, AUS)
       </h1>
       <h1 className="font-semibold">©Sonbeel Utsav 2024</h1>
-      <h1 className="">{visitors} people visited this website so far.</h1>
+      <h1 className="">{visitors} people have visited this website so far.</h1>
     </footer>
   );
 }
