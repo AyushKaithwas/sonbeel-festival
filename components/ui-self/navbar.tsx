@@ -60,6 +60,7 @@ const menuConfig: MenuEntry[] = [
       { name: "VC's message", url: "/message#vc" },
       { name: "Director's message", url: "/message#director" },
       { name: "Registrar's message", url: "/message#registrar" },
+      { name: "Convener's message", url: "/message#convener" },
     ],
   },
   {

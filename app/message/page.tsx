@@ -30,10 +30,19 @@ const messages = [
   {
     id: "registrar",
     title: "Registrar's message",
-    content: "Coming soon",
+    content:
+      "Beels or wetlands are crucial for maintaining biodiversity, improving rural livelihood, enhancing ecosystem services, and mitigating climate change impacts. To conserve wetlands effectively, it is essential to prioritize protection, restoration, management, education and awareness, research and international cooperation. By prioritizing these actions, we can work towards preserving wetlands and ensuring their continued contribution to biodiversity conservation, climate regulation, and sustainable development. In this regard, Son Beel Utsav 2024 is essential in popularizing this less-explored wetland to promote tourism and create rural livelihood opportunities. I hope the Son Beel Utsav 2024 is a great success.",
     imageUrl: "/images/message/registrar.jpg",
     name: "Dr. Pradosh Kiran Nath",
     designation: "Registrar & Organising Secretary",
+  },
+  {
+    id: "convener",
+    title: "Convener's message",
+    content: "Coming Soon",
+    imageUrl: "/images/message/convener.png",
+    name: "Dr. Arun Jyoti Nath",
+    designation: "Convener",
   },
 ];
 
