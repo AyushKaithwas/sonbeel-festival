@@ -39,7 +39,8 @@ const messages = [
   {
     id: "convener",
     title: "Convener's message",
-    content: "Coming Soon",
+    content:
+      "Being an ecologist, I believe that Son Beel Utsav 2024 will play a pivotal role in raising awareness about the importance of this wetland as a vital ecosystem and cultural heritage site. Son Beel Utsav will also provide opportunities for communities to showcase their unique traditions, folklore, and artistic expressions tied to wetland environments. By highlighting the cultural value of this wetland, Son Beel Utsav will foster a deeper connection between people and their natural surroundings, promoting conservation efforts and sustainable practices. Moreover, such events will preserve indigenous knowledge and traditions, fostering social cohesion and pride in local heritage. In essence, the Son Beel Utsav 2024 will bridge environmental conservation and cultural appreciation, reinforcing the interconnectedness between nature and human societies.",
     imageUrl: "/images/message/convener.png",
     name: "Dr. Arun Jyoti Nath",
     designation: "Convener",
