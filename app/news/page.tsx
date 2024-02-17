@@ -150,8 +150,8 @@ export default function Page() {
         </li>
         <li>
           <h1 className=" text-xl ">
-            প্রস্তুতি তুঙ্গে। শনবিলে শুরু হচ্ছে তিনদিন ব্যাপি লোক উৎসব৷ Himanta
-            Biswa Sarma Pijush Hazarika Jayanta Mallabaruah - News অবিকল 24x7 (
+            প্রস্তুতি তুঙ্গে। শনবিলে শুরু হচ্ছে তিনদিন ব্যাপি লোক উৎসব৷ - News
+            অবিকল 24x7 (
             <Link
               target="_blank"
               className="text-primary hover:text-secondary"
