@@ -40,6 +40,19 @@ export default async function Home() {
         </video>
 
         <div className="flex flex-col items-center gap-2 rounded-xl border px-3 py-5 md:flex-row md:gap-10 md:px-10">
+          <div className="flex flex-col items-center gap-3">
+            <h1 className="text-xl font-bold text-secondary">
+              Son Beel Utsav Theme Song
+            </h1>
+            <audio controls src="/audio/sonbeel-utsav-theme-song.mpeg"></audio>
+          </div>
+          <h2 className="text-center text-sm font-bold text-primary md:text-left md:text-lg">
+            Lyrics: Prof. Manabendra Dutta Choudhury <br />
+            Voice: Dr. Jagannath Barman
+          </h2>
+        </div>
+
+        <div className="flex flex-col items-center gap-2 rounded-xl border px-3 py-5 md:flex-row md:gap-10 md:px-10">
           <h1 className="text-xl font-bold text-secondary">Announcement</h1>
           <audio controls src="/audio/sonbeel-utsav-audio-message.mpeg"></audio>
         </div>
