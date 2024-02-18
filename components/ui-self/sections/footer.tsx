@@ -17,8 +17,11 @@ export function Footer({
           target="_blank"
         >
           Ayush Kaithwas
-        </Link>{" "}
-        (CSE, AUS)
+        </Link>
+        {" and "}
+        <span className="font-bold text-primary ">
+          Dr. Arnab Paul (CSE, AUS)
+        </span>
       </h1>
       <h1 className="font-semibold">©Sonbeel Utsav 2024</h1>
       <h1 className="">{visitors} people have visited this website so far.</h1>
