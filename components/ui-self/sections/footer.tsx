@@ -16,7 +16,7 @@ export function Footer({
           href="https://www.linkedin.com/in/ayush1kaithwas/"
           target="_blank"
         >
-          Ayush Kaithwas
+          Mr. Ayush Kaithwas
         </Link>
         {" and "}
         <span className="font-bold text-primary ">
