@@ -84,7 +84,7 @@ const menuConfig: MenuEntry[] = [
   },
   {
     name: "Festival Schedule",
-    url: "/sonbeel-utsav-2024-schedule.pdf",
+    url: "/event-schedule.pdf",
     dropdown: false,
   },
   {
