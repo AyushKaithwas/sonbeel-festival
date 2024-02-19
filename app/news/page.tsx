@@ -27,6 +27,18 @@ export default function Page() {
       </div>
       <div className="shadow-md">
         <Image
+          src="/images/news/news7.jpeg"
+          alt="Newspaper Snippet"
+          width={1200}
+          height={1200}
+          className="w-[50rem]"
+        />
+        <h1 className="text-lg text-primary">
+          ভাস্কর ঘোষ অধিকারী, স্যন্দন পত্রিকা (19 February 2024)
+        </h1>
+      </div>
+      <div className="shadow-md">
+        <Image
           src="/images/news/news5.png"
           alt="Newspaper Snippet"
           width={1200}
@@ -92,6 +104,20 @@ export default function Page() {
         </h1>
       </div>
       <ul className="flex list-disc flex-col gap-2 md:w-[50rem] ">
+        <li>
+          <h1 className=" text-xl">
+            Son-beel Utsav to be organised from 26-28 Feb at Debodwar... - All
+            Indian Radio News (
+            <Link
+              target="_blank"
+              className="text-primary hover:text-secondary"
+              href="https://x.com/airnewsalerts/status/1757339211940712750?t=UiJqzfh8LvDJMuAbwH-_Kw&s=08"
+            >
+              Click here
+            </Link>{" "}
+            to watch)
+          </h1>
+        </li>
         <li>
           <h1 className=" text-xl">
             আর্থসামাজিক ও উন্নয়নের লক্ষ্যে আগামী ২৪ থেকে ২৬ ফেব্রুয়ারি
