@@ -120,6 +120,19 @@ export default function Page() {
         </li>
         <li>
           <h1 className=" text-xl">
+            শনবিল উৎসব ২০২৪ উদ্বোধনে আসছেন অসমের রাজ্যপাল। - BARAK TODAY (
+            <Link
+              target="_blank"
+              className="text-primary hover:text-secondary"
+              href="https://www.facebook.com/share/v/e3N2ziLPA4Xs8zRM/?mibextid=xCPwDs"
+            >
+              Click here
+            </Link>{" "}
+            to watch)
+          </h1>
+        </li>
+        <li>
+          <h1 className=" text-xl">
             আর্থসামাজিক ও উন্নয়নের লক্ষ্যে আগামী ২৪ থেকে ২৬ ফেব্রুয়ারি
             অনুষ্ঠিত হতে চলছে শনবিল উৎসব - BTV (
             <Link
